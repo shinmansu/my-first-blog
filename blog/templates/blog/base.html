@@ -1,8 +1,8 @@
 {% load static %}
 <html>
     <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <title>호구방지</title>
+        <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -12,15 +12,52 @@
             {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}    
-            <h1><a href="/">Django Girls Blog</a></h1>
+            <h1><a href="/">호구방지</a></h1>
         </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
-                </div>
-            </div>
+        <div class="page-content">
+          <section class = "content1">
+            <h3>
+              증거 능력이 있는 계약을 생성하고 <br>
+              친구, 가족, 지인들에게 돈을 빌려주세요.
+            </h3>
+            <h4> 
+              호구방지를 이용하면 빌려준 사실을 증명하기 쉽고 <br> 
+              채권을 관리하기가 편해집니다. 
+            </h4>
+            <button class="borrow" type="button">
+              지인에게 돈 빌리기
+            </button>
+            <p>
+            </p>
+            <button class="lend" type="button">
+              지인에게 돈 빌려주기
+            </button>
+          </section>
+          <section class="content2">
+            <h3>
+              법적 증명이 가능한 계약으로 <br>
+              돈과 인간관계를 모두 지키세요.
+            </h3> 
+            <img src="C:\Users\user\djangogirls\myvenv\html" alt="">
+            <h4>
+              대출을 요청하거나 제안하면 자동으로 갚아야 할 금액과 기간을 명시한 전자문서를 채권자와 채무자에게 전송합니다.
+            </h4>
+            <h4>
+              이 기록은 법적 효력이 있는 차용증의 역할을 할 수 있어 추후 계약의 존재를 증명하는데 쓰일 수 있습니다.
+            </h4>
+          </section>
+          <section class="content3">
+            <h3>
+              돈을 빌려주고 잊어버릴까 <br>
+              걱정된다면 호구방지를 시작하세요!               
+            </h3>
+            <h4>
+              호구방지는 계약을 생성할 때마다 이를 저장하고 현재 채권과 채무 상황을 한 눈에 볼 수 있는 대시보드를 제공합니다.
+            </h4>
+            <h4>              
+              이 곳에서, 동시에 여러 채권을 관리하고 과거 채권 기록 내역을 확인하세요. 동일한 지인에게 빌린 돈과 갚을 돈이 모두 존재하는 경우,               채권과 채무를 합쳐 ‘상계’시키거나, 기존 채무를 분할상환하는 것도 가능합니다.
+            </h4>
+          </section>
         </div>
     </body>
 </html>
